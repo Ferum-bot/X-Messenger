@@ -12,7 +12,7 @@ android {
     compileSdkVersion(30)
 
     defaultConfig {
-        applicationId = "com.github.ferum_bot.f_messenger"
+        applicationId = "com.github.ferum_bot.x_messenger"
         minSdkVersion(24)
         targetSdkVersion(30)
         versionCode = 1

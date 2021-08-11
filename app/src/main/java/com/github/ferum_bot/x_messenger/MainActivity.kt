@@ -1,4 +1,4 @@
-package com.github.ferum_bot.f_messenger
+package com.github.ferum_bot.x_messenger
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

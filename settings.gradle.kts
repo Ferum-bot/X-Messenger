@@ -1,3 +1,3 @@
 include(":app")
-rootProject.name = "F-Messenger"
+rootProject.name = "X-Messenger"
 rootProject.buildFileName = "build.gradle.kts"

@@ -1,4 +1,4 @@
-package com.github.ferum_bot.f_messenger
+package com.github.ferum_bot.x_messenger
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
