@@ -1,5 +1,5 @@
 object Config {
-    const val APPLICATION_ID = "com.levit.book_me"
+    const val APPLICATION_ID = "com.github.ferum_bot.x_messenger"
 
     const val COMPILE_SDK_VERSION = 30
     const val MIN_SDK_VERSION = 24

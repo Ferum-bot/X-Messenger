@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:allowBackup="false"
-        android:theme="@style/Theme.XMessenger">
+        android:theme="@style/Theme.XMessenger"
+        android:name=".XApplication">
 
         <activity android:name="com.github.ferum_bot.x_messenger.MainActivity">
             <intent-filter>

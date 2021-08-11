@@ -4,22 +4,22 @@ import org.gradle.kotlin.dsl.implementation
 
 
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
+    id(Plugins.ANDROID_APPLICATION)
+    id(Plugins.KOTLIN_ANDROID)
 }
 
 android {
     compileSdkVersion(30)
 
     defaultConfig {
-        applicationId = "com.github.ferum_bot.x_messenger"
-        minSdkVersion(24)
-        targetSdkVersion(30)
+        applicationId = Config.APPLICATION_ID
+        minSdkVersion(Config.MIN_SDK_VERSION)
+        targetSdkVersion(Config.TARGET_SDK_VERSION)
         versionCode = 1
         versionName = "1.0.0"
-        multiDexEnabled = true
+        multiDexEnabled = Config.MULTIDEX_ENABLED
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = Config.TEST_INSTRUMENTATION_RUNNER
     }
 
     buildTypes {
