@@ -13,7 +13,10 @@ include(
     ":Features:Profiles",
     ":Features:Security",
     ":Features:Conversations",
-    ":Features:Settings"
+    ":Features:Settings",
+    ":Features:Contacts",
+    ":Features:CreatingAccount",
+    ":Features:OnBoarding"
 )
 include(":UIKit")
 include(":app")
