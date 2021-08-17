@@ -6,6 +6,9 @@ import Config
 import dependencies.Dependencies
 import extensions.implementation
 import extensions.addAllTestDependencies
+import extensions.addBaseCoreDependencies
+import extensions.addAllUIDependencies
+import extensions.addAllDIDependencies
 
 plugins {
     id("com.android.library")
@@ -46,4 +49,10 @@ dependencies {
     implementation(Dependencies.TIMBER)
 
     addAllTestDependencies()
+
+    addBaseCoreDependencies()
+
+    addAllUIDependencies()
+
+    addAllDIDependencies()
 }

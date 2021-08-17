@@ -5,6 +5,10 @@ import BuildTypeRelease
 import Config
 import dependencies.Dependencies
 import extensions.implementation
+import extensions.addBaseCoreDependencies
+import extensions.addAllUIDependencies
+import extensions.addAllDIDependencies
+import extensions.project
 
 plugins {
     id("com.android.library")
@@ -43,4 +47,17 @@ dependencies {
     implementation(Dependencies.KOTLIN)
     implementation(Dependencies.DAGGER)
     implementation(Dependencies.TIMBER)
+
+    implementation(project(Core.Base))
+    implementation(project(Core.Data))
+    implementation(project(Core.Network))
+
+    implementation(project(Additional.UIKit))
+    implementation(project(Additional.Security))
+
+    addBaseCoreDependencies()
+
+    addAllUIDependencies()
+
+    addAllDIDependencies()
 }
