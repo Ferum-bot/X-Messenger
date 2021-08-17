@@ -58,9 +58,13 @@ object Versions {
 
     // Logging
     const val TIMBER = "4.7.1"
+
     // Test dependencies
     const val JUNIT = "4.12"
+    const val JUNIT_ANDROID = "1.1.3"
     const val MOCKITO_KOTLIN = "2.1.0"
+
+    const val ESPRESSO = "3.4.0"
 
     const val POWERMOCK = "2.0.0"
 

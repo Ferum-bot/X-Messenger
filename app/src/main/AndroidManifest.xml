@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:allowBackup="false"
         android:theme="@style/Theme.XMessenger"
-        android:name=".XApplication">
+        android:name=".application.XApplication">
 
-        <activity android:name="com.github.ferum_bot.x_messenger.MainActivity">
+        <activity
+            android:name="com.github.ferum_bot.x_messenger.onboarding_flow.OnBoardingHostActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

@@ -3,15 +3,14 @@ include(
     ":ChatKit:ChatUI"
 )
 include(
-    ":Core:base",
-    ":Core:data",
-    ":Core:network"
+    ":Core:Base",
+    ":Core:Data",
+    ":Core:Network"
 )
 include(
     ":Features:Auth",
     ":Features:Chats",
     ":Features:Profiles",
-    ":Features:Security",
     ":Features:Conversations",
     ":Features:Settings",
     ":Features:Contacts",
@@ -19,6 +18,7 @@ include(
     ":Features:OnBoarding"
 )
 include(":UIKit")
+include(":Security")
 include(":app")
 rootProject.name = "X-Messenger"
 rootProject.buildFileName = "build.gradle.kts"

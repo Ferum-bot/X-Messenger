@@ -9,6 +9,9 @@ import extensions.addBaseCoreDependencies
 import extensions.addAllUIDependencies
 import extensions.addAllDIDependencies
 import extensions.project
+import gradle.kotlin.dsl.accessors._745af750dd4a0db2bfdff2847f194f07.android
+import org.gradle.api.JavaVersion
+import org.gradle.kotlin.dsl.dependencies
 
 plugins {
     id("com.android.library")
@@ -37,23 +40,12 @@ android {
     sourceSets.forEach {
         it.java.setSrcDirs(it.java.srcDirs + "src/$it.name/kotlin")
     }
-
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
     implementation(Dependencies.KOTLIN)
     implementation(Dependencies.DAGGER)
     implementation(Dependencies.TIMBER)
-
-    implementation(project(Core.Base))
-    implementation(project(Core.Data))
-    implementation(project(Core.Network))
-
-    implementation(project(Additional.UIKit))
-    implementation(project(Additional.Security))
 
     addBaseCoreDependencies()
 

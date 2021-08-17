@@ -1,4 +1,4 @@
-package com.github.ferum_bot.x_messenger
+package com.github.ferum_bot.x_messenger.application
 
 import android.app.Application
 

@@ -2,10 +2,12 @@ import dependencies.Dependencies
 import extensions.*
 import org.gradle.kotlin.dsl.implementation
 
-
 plugins {
     id(Plugins.ANDROID_APPLICATION)
     id(Plugins.KOTLIN_ANDROID)
+    id(Plugins.KOTLIN_KAPT)
+    id(Plugins.KOTLIN_PARCELIZE)
+    id(Plugins.KOTLIN_ALLOPEN)
 }
 
 android {
@@ -59,13 +61,49 @@ android {
 }
 
 dependencies {
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.5.21")
-    implementation("androidx.core:core-ktx:1.6.0")
-    implementation("androidx.appcompat:appcompat:1.3.1")
-    implementation("com.google.android.material:material:1.4.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.0")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
+    implementation(project(Features.OnBoarding))
+    implementation(project(Features.Auth))
+    implementation(project(Features.Chats))
+    implementation(project(Features.Contacts))
+    implementation(project(Features.Conversations))
+    implementation(project(Features.CreatingAccount))
+    implementation(project(Features.Profiles))
+    implementation(project(Features.Settings))
+
+    implementation(project(Core.Base))
+    implementation(project(Core.Network))
+    implementation(project(Core.Data))
+
+    implementation(Dependencies.KOTLIN)
+    implementation(Dependencies.DAGGER)
+    implementation(Dependencies.TIMBER)
+
+    // Dependency Injection
+    addAllDIDependencies()
+
+    // UI
+    addAllUIDependencies()
+
+    // Base core
+    addBaseCoreDependencies()
+
+    // Network
+    addAllNetworkDependencies()
+
+    // Android Lifecycle
+    addLifecycleDependencies()
+
+    // Glide
+    addGlideDependencies()
+
+    // Room data base
+    addRoomDependencies()
+
+    // Work Manager
+    addWorkManagerDependencies()
+
+    // Test
+    addAllTestDependencies()
 }

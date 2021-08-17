@@ -5,6 +5,7 @@ object Plugins {
     const val CORE_MODULE = "module_plugins.core-module"
     const val FEATURE_MODULE = "module_plugins.feature-module"
     const val KIT_MODULE = "module_plugins.kit-module"
+    const val ADDITIONAL_MODULE = "module_plugins.additional-module"
 
     const val GOOGLE_SERVICES = "com.google.gms.google-services"
 
