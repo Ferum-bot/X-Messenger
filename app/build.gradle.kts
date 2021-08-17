@@ -72,6 +72,10 @@ dependencies {
     implementation(project(Features.Profiles))
     implementation(project(Features.Settings))
 
+    implementation(project(Core.Base))
+    implementation(project(Core.Network))
+    implementation(project(Core.Data))
+
     implementation(Dependencies.KOTLIN)
     implementation(Dependencies.DAGGER)
     implementation(Dependencies.TIMBER)

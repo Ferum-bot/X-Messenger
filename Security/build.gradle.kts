@@ -1,3 +1,3 @@
 plugins {
-    id(Plugins.FEATURE_MODULE)
+    id(Plugins.ADDITIONAL_MODULE)
 }
